@@ -1,0 +1,23 @@
+#!bin/bash
+clear
+
+echo ".............................................. "
+echo "Author : gilangcans "
+echo "Youtube :ga ada:v "
+echo "............................................. "
+figlet call | lolcat
+echo '
+[1]. call
+[2]. Exit
+'
+echo
+read -p "masukan pilihan klean : " pil
+if [[ $pil == 1 ]]; then
+read -p "masukan nomor | " nomor
+link="https://id.jagreward.com/member/verify-mobile/$nomor"
+curl -s $link
+else
+echo 'trimakasih yee'
+exit
+fi
+echo
